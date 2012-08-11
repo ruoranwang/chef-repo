@@ -1,0 +1,10 @@
+log_level                :info
+log_location             STDOUT
+node_name                ''
+client_key               ''
+validation_client_name   'chef-validator'
+validation_key           ''
+chef_server_url          ''
+cache_type               'BasicFile'
+cache_options( :path => '/Users/ruoran/work/s1-chef-repo/.chef/checksums' )
+cookbook_path [ '../cookbooks' ]
