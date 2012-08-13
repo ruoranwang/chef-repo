@@ -1,5 +1,6 @@
 .rake_test_cache
 .chef/*.pem
+.chef/knife.rb
 !.chef/knife.rb.example
 site-cookbooks
 
