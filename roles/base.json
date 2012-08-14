@@ -1,0 +1,17 @@
+{
+  "name": "base",
+  "description": "base role for s1-chef client nodes",
+  "json_class": "Chef::Role",
+  "chef_type": "role",
+  "run_list": [
+    "recipe[chef-client::cron]",
+    "recipe[timezone]"
+  ],
+  "default_attributes": {
+    "chef_client": { 
+      "server_url": "http://s1.decx.co" ,
+      "cron": { "minute": "*/30" }
+    },
+    "tz": "CST6CDT" 
+  }
+}
